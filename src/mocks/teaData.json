@@ -1,0 +1,147 @@
+{
+  "promotions": [
+    {
+      "id": "promo-1",
+      "title": "Envío Gratis",
+      "description": "Envío gratis superando los $85.000"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "step": 1,
+      "title": "¿Qué beneficios buscás hoy?",
+      "options": ["Relajarme", "Energía", "Digestivo"]
+    },
+    {
+      "id": "q2",
+      "step": 2,
+      "title": "¿Con cafeína?",
+      "options": ["Sí, quiero energía", "No, sin cafeína", "No me importa"]
+    },
+    {
+      "id": "q3",
+      "step": 3,
+      "title": "¿Qué sabores disfrutás?",
+      "options": ["Florales", "Frutales", "Herbales"]
+    },
+    {
+      "id": "q4",
+      "step": 4,
+      "title": "¿Qué intensidad preferís?",
+      "options": ["Suave", "Media", "Intensa"]
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-1",
+      "name": "Atardecer en Marrakesh Tisana",
+      "category": "Tisanas",
+      "price": 20100.00,
+      "image_url": "https://acdn-us.mitiendanube.com/stores/006/140/591/products/tizana_atardecer_lat_clear-4bd808735070d4432917607309449912-1024-1024.webp",
+      "buy_url": "https://www.fleurdevietea.com.ar/productos/atardecer-en-marrakesh-tisana/",
+      "tags": ["Energía", "Frutales", "Media", "No, sin cafeína"],
+      "ingredients": ["Rooibos rojo", "Trozos de manzana", "Cáscara de naranja", "Canela"],
+      "benefits": ["Energizante natural sin cafeína", "Rico en vitamina C", "Mejora la digestión"]
+    },
+    {
+      "id": "prod-2",
+      "name": "Elixir de Jade Tea Blend",
+      "category": "Té Blend",
+      "price": 26720.00,
+      "image_url": "https://acdn-us.mitiendanube.com/stores/006/140/591/products/elixir_lat_clear-583944fe43121716c917607183241451-1024-1024.webp",
+      "buy_url": "https://www.fleurdevietea.com.ar/productos/elixir-de-jade-tea-blend/",
+      "tags": ["Relajarme", "Herbales", "Suave", "Sí, quiero energía"],
+      "ingredients": ["Té verde", "Menta piperita", "Lemongrass"],
+      "benefits": ["Alto poder antioxidante", "Efecto détox", "Reduce el estrés diario"]
+    },
+    {
+      "id": "prod-3",
+      "name": "Caja de Capullos de Té Negro y Flores",
+      "category": "Capullos Florecientes",
+      "price": 34010.00,
+      "image_url": "https://acdn-us.mitiendanube.com/stores/006/140/591/products/5-capullos-de-te-negro-yunnan-x-12-7525-7487cf7ab00404d6ee17646939174222-1024-1024.webp",
+      "buy_url": "https://www.fleurdevietea.com.ar/productos/caja-de-capullos-de-te-negro-de-yunnan-y-flores/",
+      "tags": ["Energía", "Florales", "Intensa", "Sí, quiero energía"],
+      "ingredients": ["Té negro de Yunnan", "Flores de amaranto", "Jazmín"],
+      "benefits": ["Estimulante natural", "Rico en polifenoles", "Mejora la circulación"]
+    },
+    {
+      "id": "prod-4",
+      "name": "Tubo de Capullos de Té Negro con Trufa Negra",
+      "category": "Capullos Florecientes",
+      "price": 197660.00,
+      "image_url": "https://acdn-us.mitiendanube.com/stores/006/140/591/products/mixtru-001-132c25b2fb19247e0d17649467553376-1024-1024.webp",
+      "buy_url": "https://www.fleurdevietea.com.ar/productos/tubo-de-4-capullos-de-te-negro-de-yunnan-con-trufa-negra-premium/",
+      "tags": ["Digestivo", "Herbales", "Intensa", "Sí, quiero energía"],
+      "ingredients": ["Té negro premium", "Trufa negra", "Especias terrosas"],
+      "benefits": ["Exclusivo digestivo", "Experiencia umami", "Propiedades antiinflamatorias"]
+    },
+    {
+      "id": "prod-5",
+      "name": "Caja Premium de Capullos Pu erh y Flores",
+      "category": "Capullos Florecientes",
+      "price": 79860.00,
+      "image_url": "https://acdn-us.mitiendanube.com/stores/006/140/591/products/6-premium-te-pu-erh-y-flores-x-3-1-e549f311fa105648ea17642782492926-1024-1024.webp",
+      "buy_url": "https://www.fleurdevietea.com.ar/productos/caja-de-capullos-de-te-pu-erh-de-yunnan-y-flores/",
+      "tags": ["Digestivo", "Florales", "Media", "Sí, quiero energía"],
+      "ingredients": ["Té rojo Pu Erh", "Flores comestibles", "Pétalos de rosa"],
+      "benefits": ["Acelera el metabolismo", "Excelente digestivo post-comidas", "Regula el colesterol"]
+    },
+    {
+      "id": "prod-6",
+      "name": "Jardín Imperial Tea Blend",
+      "category": "Té Blend",
+      "price": 24500.00,
+      "image_url": "https://acdn-us.mitiendanube.com/stores/006/140/591/products/4-jardin-imperial-de-luxe-420350a7204510217317628852631854-1024-1024.webp",
+      "buy_url": "https://www.fleurdevietea.com.ar/productos/jardin-imperial-deluxe-tea-blend/",
+      "tags": ["Relajarme", "Florales", "Suave", "No me importa"],
+      "ingredients": ["Té Blanco", "Flores de Jazmín", "Lavanda"],
+      "benefits": ["Relajante del sistema nervioso", "Mejora el aspecto de la piel", "Antioxidante suave"]
+    },
+    {
+      "id": "prod-7",
+      "name": "Bosque de Canela y Especias",
+      "category": "Infusiones de Bienestar",
+      "price": 21300.00,
+      "image_url": "https://acdn-us.mitiendanube.com/stores/006/140/591/products/8-bosque-de-canela-f89cbb28b352fe718a17628858492777-1024-1024.webp",
+      "buy_url": "https://www.fleurdevietea.com.ar/productos/bosque-de-canela-tea-blend/",
+      "tags": ["Digestivo", "Herbales", "Intensa", "No, sin cafeína"],
+      "ingredients": ["Canela en rama", "Jengibre", "Clavo de olor"],
+      "benefits": ["Potente antiinflamatorio", "Alivia pesadez estomacal", "Reconfortante térmico"]
+    },
+    {
+      "id": "prod-8",
+      "name": "Brisa de Lavanda y Manzanilla",
+      "category": "Relax & Calma",
+      "price": 19500.00,
+      "image_url": "https://acdn-us.mitiendanube.com/stores/006/140/591/products/6-serenidad-floral-eea5b2e6b7b53314fd17628857136479-1024-1024.webp",
+      "buy_url": "https://www.fleurdevietea.com.ar/productos/serenidad-floral-tea-blend/",
+      "tags": ["Relajarme", "Herbales", "Suave", "No, sin cafeína"],
+      "ingredients": ["Flores de Lavanda", "Manzanilla", "Melisa"],
+      "benefits": ["Induce el sueño profundo", "Calma la ansiedad", "Alivia dolores de cabeza"]
+    },
+    {
+      "id": "prod-9",
+      "name": "Vitalidad Cítrica Blend",
+      "category": "Energía & Vitalidad",
+      "price": 22800.00,
+      "image_url": "https://acdn-us.mitiendanube.com/stores/006/140/591/products/1000123547-24d8cadcfff0de63c617643537582925-1024-1024.webp",
+      "buy_url": "https://www.fleurdevietea.com.ar/productos/caja-de-capullos-de-te-negro-de-yunnan-y-flores/",
+      "tags": ["Energía", "Frutales", "Media", "Sí, quiero energía"],
+      "ingredients": ["Té Negro", "Cáscara de limón", "Bergamota"],
+      "benefits": ["Refuerza el sistema inmunológico", "Energía de larga duración", "Mejora el estado de ánimo"]
+    },
+    {
+      "id": "prod-10",
+      "name": "Frutos Rojos Silvestres Tisana",
+      "category": "Tisanas",
+      "price": 18900.00,
+      "image_url": "https://acdn-us.mitiendanube.com/stores/006/140/591/products/tuboflor-3-00a256f9c0a376cf4317655649974332-1024-1024.webp",
+      "buy_url": "https://www.fleurdevietea.com.ar/productos/amaranto-rojo-tubo-con-flores/",
+      "tags": ["Energía", "Frutales", "Suave", "No, sin cafeína"],
+      "ingredients": ["Hibiscus", "Arándanos", "Frambuesas deshidratadas"],
+      "benefits": ["Altamente diurético", "Rico en Vitamina C", "Libre de estimulantes"]
+    }
+  ]
+}
