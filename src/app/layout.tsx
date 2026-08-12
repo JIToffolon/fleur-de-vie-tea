@@ -20,8 +20,17 @@ const averia = Averia_Libre({
   weight: ["400", "700"],
 });
 
+// Dynamic base URL detection for Vercel deployment & local dev
+const getBaseUrl = () => {
+  if (process.env.NEXT_PUBLIC_SITE_URL) return process.env.NEXT_PUBLIC_SITE_URL;
+  if (process.env.VERCEL_PROJECT_PRODUCTION_URL)
+    return `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`;
+  if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
+  return "http://localhost:3000";
+};
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://fleur-de-vie-tea-app.vercel.app"),
+  metadataBase: new URL(getBaseUrl()),
   title: {
     default: "Fleur de Vie - Asesor Virtual de Té",
     template: "%s | Fleur de Vie Luxury Tea",
@@ -43,26 +52,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_AR",
-    url: "https://www.fleurdevietea.com.ar",
+    url: getBaseUrl(),
     siteName: "Fleur de Vie Luxury Tea",
     title: "Fleur de Vie - Asesor Virtual de Té",
     description:
       "Descubrí tu té blend o infusión ideal con nuestra experiencia interactiva y ritual de bienestar.",
-    images: [
-      {
-        url: "/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: "Fleur de Vie Luxury Tea - Asesor Virtual",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Fleur de Vie - Asesor Virtual de Té",
     description:
       "Descubrí tu té blend o infusión ideal con nuestra experiencia interactiva.",
-    images: ["/opengraph-image"],
   },
 };
 
