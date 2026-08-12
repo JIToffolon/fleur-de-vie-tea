@@ -10,19 +10,8 @@ interface SplashProps {
 export default function Splash({ onStart }: SplashProps) {
   return (
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-between bg-[#0F382C] text-[#FDFBF7] p-6 select-none overflow-hidden">
-      {/* Background Luxury Image with Gradient Overlay */}
-      <div className="absolute inset-0 z-0 opacity-25 mix-blend-overlay">
-        <Image
-          src="https://acdn-us.mitiendanube.com/stores/006/140/591/themes/brasilia/2-slide-1762982332697-7739069705-0d1c7c3d0c29a0cb944231892c211c3c1762982333-1920-1920.webp?516782175106559954"
-          alt="Luxury Blooming Tea Background"
-          fill
-          sizes="100vw"
-          className="object-cover object-center"
-          priority
-        />
-      </div>
-
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0F382C]/80 via-[#0F382C]/95 to-[#0A271E]" />
+      {/* Background Gradient */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0F382C] via-[#0F382C] to-[#0A271E]" />
 
       {/* Main Content (Ref: Figma Splash Screen 00-01) */}
       <div className="relative z-10 flex-1 flex flex-col items-center justify-center text-center max-w-sm mx-auto w-full my-auto">
