@@ -57,12 +57,21 @@ export const metadata: Metadata = {
     title: "Fleur de Vie - Asesor Virtual de Té",
     description:
       "Descubrí tu té blend o infusión ideal con nuestra experiencia interactiva y ritual de bienestar.",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Fleur de Vie Luxury Tea - Asesor Virtual de Té",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Fleur de Vie - Asesor Virtual de Té",
     description:
       "Descubrí tu té blend o infusión ideal con nuestra experiencia interactiva.",
+    images: ["/images/og-image.png"],
   },
 };
 
