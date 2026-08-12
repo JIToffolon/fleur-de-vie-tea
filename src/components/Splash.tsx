@@ -108,10 +108,17 @@ export default function Splash({ onStart }: SplashProps) {
           </svg>
         </div>
 
-        {/* Brand Name */}
-        <h1 className="font-serif text-4xl tracking-wider text-[#D4AF37] font-bold mb-1 drop-shadow-md">
-          Fleur de Vie
-        </h1>
+        {/* Brand Name Logo */}
+        <div className="mb-2 flex justify-center">
+          <Image
+            src="/images/logo-fleur-de-vie.webp"
+            alt="Fleur de Vie"
+            width={240}
+            height={80}
+            className="w-56 h-auto object-contain drop-shadow-md"
+            priority
+          />
+        </div>
         <p className="font-sans text-xs tracking-[0.35em] uppercase text-[#D4AF37]/90 mb-6 font-semibold">
           TEA EXPERIENCE
         </p>

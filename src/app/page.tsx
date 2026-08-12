@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { useTeaTest } from "@/hooks/useTeaTest";
 import PromoBanner from "@/components/PromoBanner";
 import Splash from "@/components/Splash";
@@ -43,9 +44,14 @@ export default function Home() {
           {/* Header branding bar */}
           <header className="w-full bg-[#0F382C] text-[#FDFBF7] p-4 flex items-center justify-between shadow-md">
             <div className="flex items-center gap-2">
-              <span className="text-[#D4AF37] font-serif text-lg font-bold tracking-wider">
-                FLEUR DE VIE
-              </span>
+              <Image
+                src="/images/logo-fleur-de-vie.webp"
+                alt="Fleur de Vie"
+                width={150}
+                height={38}
+                className="h-7 w-auto object-contain"
+                priority
+              />
             </div>
             <button
               onClick={() => {

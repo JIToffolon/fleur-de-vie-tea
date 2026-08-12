@@ -66,12 +66,12 @@ const getOptionIcon = (option: string, isSelected: boolean) => {
   }
 };
 
-// Subtitle labels for each step / screen
+// Subtitle labels for each step
 const STEP_SUBTITLES: Record<number, string> = {
-  1: "Pantalla 16 • Beneficio Principal",
-  2: "Pantalla 17 • Nivel de Cafeína",
-  3: "Pantalla 18 • Perfil de Sabor",
-  4: "Pantalla 19 • Intensidad Deseada",
+  1: "Beneficio Principal",
+  2: "Nivel de Cafeína",
+  3: "Perfil de Sabor",
+  4: "Intensidad Deseada",
 };
 
 export default function TestWizard({

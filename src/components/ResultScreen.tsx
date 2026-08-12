@@ -29,7 +29,7 @@ export default function ResultScreen({
       {/* Top Header */}
       <div className="text-center mt-2 mb-4">
         <span className="inline-block text-[#D4AF37] text-xs uppercase tracking-[0.25em] font-bold mb-1">
-          Pantalla 21 • Resultado Asesor Virtual
+          Recomendación Personalizada
         </span>
         <h2 className="font-serif text-3xl text-[#0F382C] font-bold">
           Tu Té Ideal
