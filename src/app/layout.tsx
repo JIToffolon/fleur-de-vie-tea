@@ -49,6 +49,20 @@ export const metadata: Metadata = {
   authors: [{ name: "Fleur de Vie" }],
   creator: "Fleur de Vie",
   publisher: "Fleur de Vie",
+  icons: {
+    icon: [
+      { url: "/images/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/images/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/images/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "Fleur de Vie",
+  },
   openGraph: {
     type: "website",
     locale: "es_AR",
@@ -80,6 +94,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
+  themeColor: "#0F382C",
 };
 
 export default function RootLayout({

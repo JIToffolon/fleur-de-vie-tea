@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 
 export const runtime = "nodejs";
-export const size = { width: 192, height: 192 };
+export const size = { width: 512, height: 512 };
 export const contentType = "image/png";
 
 export default function Icon() {
@@ -10,7 +10,7 @@ export default function Icon() {
     process.cwd(),
     "public",
     "images",
-    "icon-oficial.png"
+    "icon-512.png"
   );
   const buffer = fs.readFileSync(filePath);
   return new Response(buffer, {

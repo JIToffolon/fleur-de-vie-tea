@@ -1,9 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
-import Image from "next/image";
 import { ExternalLink, ShoppingBag, RotateCcw, Sparkles, Check, CheckCircle2 } from "lucide-react";
 import { MatchResult } from "@/hooks/useTeaTest";
+import TeaImage from "./TeaImage";
 
 interface ResultScreenProps {
   matchResult: MatchResult;
@@ -15,7 +14,6 @@ export default function ResultScreen({
   onRestart,
 }: ResultScreenProps) {
   const { winningProduct, matchedTags, score } = matchResult;
-  const [imageError, setImageError] = useState(false);
 
   // Dynamic ARS currency formatting using Intl.NumberFormat
   const formattedPrice = new Intl.NumberFormat("es-AR", {
@@ -44,28 +42,17 @@ export default function ResultScreen({
         {/* Luxury Badge */}
         <div className="absolute top-0 right-0 bg-[#D4AF37] text-[#0F382C] text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-bl-xl shadow-xs flex items-center gap-1">
           <Sparkles strokeWidth={1.5} className="w-3 h-3" />
-          <span>{score} Coincidencias</span>
+          <span>{score} Pts Match</span>
         </div>
 
         {/* Product Image Container */}
         <div className="w-36 h-36 mx-auto rounded-2xl bg-[#F7F3E9] border border-[#D4AF37]/30 flex items-center justify-center relative overflow-hidden shadow-inner my-2">
-          {!imageError && winningProduct.image_url ? (
-            <Image
-              src={winningProduct.image_url}
-              alt={winningProduct.name}
-              fill
-              sizes="144px"
-              className="object-cover"
-              onError={() => setImageError(true)}
-            />
-          ) : (
-            <div className="flex flex-col items-center justify-center p-2 text-center select-none">
-              <ShoppingBag strokeWidth={1.5} className="w-10 h-10 text-[#D4AF37] mb-1" />
-              <span className="font-serif text-[10px] text-[#0F382C] font-semibold">
-                Fleur de Vie
-              </span>
-            </div>
-          )}
+          <TeaImage
+            src={winningProduct.image_url}
+            alt={winningProduct.name}
+            sizes="144px"
+            className="object-cover"
+          />
         </div>
 
         {/* Category & Title */}

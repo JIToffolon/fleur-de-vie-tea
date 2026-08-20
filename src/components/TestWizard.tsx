@@ -14,7 +14,6 @@ import {
   Coffee,
   Flame,
   Check,
-  RotateCcw,
 } from "lucide-react";
 import { Question } from "@/types/tea";
 import { MatchResult } from "@/hooks/useTeaTest";

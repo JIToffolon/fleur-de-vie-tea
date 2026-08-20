@@ -10,7 +10,7 @@ export default function AppleIcon() {
     process.cwd(),
     "public",
     "images",
-    "icon-oficial.png"
+    "apple-touch-icon.png"
   );
   const buffer = fs.readFileSync(filePath);
   return new Response(buffer, {

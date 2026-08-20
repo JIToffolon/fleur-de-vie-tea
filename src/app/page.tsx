@@ -12,14 +12,16 @@ export default function Home() {
   const {
     questions,
     promotions,
+    answers,
     setAnswers,
     resetTest,
     matchResult,
   } = useTeaTest();
 
-  const [showSplash, setShowSplash] = useState(true);
-  const [currentView, setCurrentView] = useState<"onboarding" | "test">(
-    "onboarding"
+  const hasActiveSession = Object.keys(answers).length > 0;
+  const [showSplash, setShowSplash] = useState(() => !hasActiveSession);
+  const [currentView, setCurrentView] = useState<"onboarding" | "test">(() =>
+    hasActiveSession ? "test" : "onboarding"
   );
 
   const handleStartTest = () => {
